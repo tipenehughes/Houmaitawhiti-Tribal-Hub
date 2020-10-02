@@ -239,6 +239,10 @@ small {
     padding: 0 1rem 0 1rem;
     flex: 1 1 50%;
 }
+
+.stories a {
+    text-decoration: underline #343a40 solid;
+}
 .stories-text p,
 .stories a {
     color: #343a40;
@@ -480,20 +484,21 @@ small {
     }
 }
 
+
 @media only screen and (max-width: 420px) {
     .container {
-        padding: 0 2% 0 2%;
+        padding: 0 2% 0% 2%;
     }
     .welcome {
         text-align: center;
-        padding-bottom: 2rem;
+        padding-bottom: 8rem;
     }
     .welcome h2 {
         font-size: 2rem;
         padding-bottom: 1rem;
     }
     .welcome h1 {
-        font-size: 3.7rem;
+        font-size: 3.6rem;
     }
     .welcome h1::before {
         width: 5.5em;
