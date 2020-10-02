@@ -7,12 +7,23 @@
             href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="./flickity-docs/flickity.min.css"
+            media="screen"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css"
+        />
         <link rel="stylesheet" href="./style.css" />
+        <script src="./flickity-docs/flickity.pkgd.min.js"></script>
+        <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
         <title>Document</title>
     </head>
     <body>
         <nav id="navigation" class="navigation">
-            <ul class="nav-flex-container">
+            <ul class="nav-flex-container left">
                 <li>
                     <a class="nav-link" href="">
                         <p>Tō Tātou</p>
@@ -26,7 +37,12 @@
                     </a>
                 </li>
             </ul>
-            <ul class="nav-flex-container">
+            <ul class="nav-flex-container nav-image">
+                <a href="">
+                    <img src="./img/Capture.jpg" alt="" />
+                </a>
+            </ul>
+            <ul class="nav-flex-container right">
                 <li>
                     <a class="nav-link" href="">
                         <p>Pānui</p>
@@ -52,10 +68,10 @@
         </header>
         <main>
             <section class="quote container">
-                <h2>
+                <blockquote>
                     E tae koutou ki uta, kei mau ki tai ki Tu, puhia he angina!
                     e mau ki tai ki Noho, ma te huhu e popo, e hanehane.
-                </h2>
+                </blockquote>
             </section>
             <article class="stories">
                 <div class="stories-flex-item">
@@ -111,8 +127,62 @@
                     </div>
                 </div>
             </article>
+            <article class="support-initiatives">
+                <section class="support-initiatives-item">
+                    <h3>Support</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Duis eget velit augue. Sed vehicula neque ac leo
+                        ultricies, mollis pharetra eros fermentum. Vivamus at
+                        leo ut mi porttitor dapibus eget eu tortor. Proin sit
+                        amet mollis tortor.
+                    </p>
+                    <p>
+                        Etiam ac lectus velit. Quisque at rhoncus leo. Donec id
+                        diam non leo sodales cursus.
+                    </p>
+                    <a href="">Read More</a>
+                </section>
+                <section class="support-initiatives-item">
+                    <h3>Initiatives</h3>
+                    <p>
+                        Pellentesque purus augue, maximus vitae lobortis ac,
+                        porttitor et mi. Phasellus bibendum risus et nulla
+                        molestie, a convallis lectus sagittis. Morbi eget erat
+                        neque. Nunc non aliquam turpis. Donec a odio ac mauris
+                        viverra sagittis.
+                    </p>
+                    <p>
+                        Nunc sed elementum est, at ornare turpis. Mauris nec
+                        luctus ante.
+                    </p>
+                    <a href="">Read More</a>
+                </section>
+            </article>
+            <article class="carousel">
+                <div class="main-carousel">
+                    <div class="carousel-cell">
+                        <img src="./img/assets/1.jpg" alt="" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./img/assets/2.png" alt="" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./img/assets/3.png" alt="" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./img/assets/4.png" alt="" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./img/assets/5.jpg" alt="" />
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./img/assets/6.png" alt="" />
+                    </div>
+                </div>
+            </article>
         </main>
-        <footer></footer>
+        <footer class="footer"></footer>
         <script src="./app.js"></script>
     </body>
 </html>
