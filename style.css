@@ -8,6 +8,7 @@
 
 body {
     font-family: "Lato", sans-serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -422,6 +423,9 @@ small {
 .footer-copyright {
     color: #fff;
 }
+
+/* Animations */
+
 @keyframes nav {
     from {
         opacity: 0%;
@@ -437,5 +441,66 @@ small {
     }
     to {
         opacity: 100%;
+    }
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+    .quote blockquote:before {
+        display: none;
+    }
+    .quote blockquote:after {
+        display: none;
+    }
+    .stories {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+    .stories-flex-item {
+        margin-bottom: 1rem;
+    }
+    .stories-text h3,
+    .stories-text p {
+        margin: 0.5em 0 0.5em 0;
+    }
+    .stories-text a {
+        margin: 0.5em 0 1em 0;
+    }
+    .support-initiatives {
+        flex-direction: column;
+    }
+    .carousel {
+        height: auto;
+        min-height: 20vh;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .container {
+        padding: 0 2% 0 2%;
+    }
+    .welcome {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    .welcome h2 {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .welcome h1 {
+        font-size: 3.7rem;
+    }
+    .welcome h1::before {
+        width: 5.5em;
+        left: 1.4em;
+        top: 40px;
+    }
+    .footer-heading {
+        font-size: 3rem;
     }
 }
