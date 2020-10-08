@@ -22,7 +22,7 @@ a {
 .landing-page {
     height: 105vh;
     width: 100%;
-    background: url("./img/marae3.jpg") no-repeat center center;
+    background: url("./assets/img/marae3.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -169,7 +169,7 @@ small {
     align-items: center;
     text-align: center;
     color: #343a40;
-    background: url("./img/assets/quotebanner.png") no-repeat center center;
+    background: url("./assets/img/quotebanner.png") no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 25vh;
@@ -329,12 +329,12 @@ small {
 }
 
 .support-initiatives-item:first-of-type {
-    background: url("./img/assets/matawhaura3\ .png") no-repeat center;
+    background: url("./assets/img/matawhaura3.png") no-repeat center;
     background-size: cover;
 }
 
 .support-initiatives-item:nth-of-type(2) {
-    background: url("./img/assets/marae3.png") no-repeat center;
+    background: url("./assets/img/marae3.png") no-repeat center;
     background-size: cover;
 }
 
@@ -388,7 +388,7 @@ small {
             rgba(0, 0, 0, 0.3) 48%,
             rgba(0, 0, 0, 1) 100%
         ),
-        url("./img/assets/black.png");
+        url("./assets/img/footerbanner.png");
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -483,7 +483,6 @@ small {
         min-height: 20vh;
     }
 }
-
 
 @media only screen and (max-width: 420px) {
     .container {
