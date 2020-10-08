@@ -18,45 +18,94 @@
             href="https://unpkg.com/flickity-fullscreen@1/fullscreen.css"
         />
         <link rel="stylesheet" href="./style.css" />
+        <script
+            src="https://kit.fontawesome.com/b0e932b144.js"
+            crossorigin="anonymous"
+        ></script>
         <script src="./flickity-docs/flickity.pkgd.min.js"></script>
         <script src="https://unpkg.com/flickity-fullscreen@1/fullscreen.js"></script>
         <title>Pounamunui Marae</title>
     </head>
     <body>
-        <nav id="navigation" class="navigation">
-            <ul class="nav-flex-container left">
-                <li>
-                    <a class="nav-link" href="">
-                        <p>Tō Tātou</p>
-                        <small>About</small>
+        <nav>
+            <div id="navigation" class="navigation">
+                <ul class="nav-flex-container left">
+                    <li>
+                        <a class="nav-link" href="">
+                            <p>Tō Tātou</p>
+                            <small>About</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="">
+                            <p>Whānau</p>
+                            <small>Family</small>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav-flex-container nav-image">
+                    <a href="">
+                        <img src="./assets/img/navIcon.png" alt="" />
                     </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="">
-                        <p>Whānau</p>
-                        <small>Family</small>
-                    </a>
-                </li>
-            </ul>
-            <ul class="nav-flex-container nav-image">
-                <a href="">
-                    <img src="./assets/img/navIcon.png" alt="" />
-                </a>
-            </ul>
-            <ul class="nav-flex-container right">
-                <li>
-                    <a class="nav-link" href="">
-                        <p>Pānui</p>
-                        <small>News</small>
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-link" href="">
-                        <p>Whakapā</p>
-                        <small>Contact</small>
-                    </a>
-                </li>
-            </ul>
+                </ul>
+                <ul class="nav-flex-container right">
+                    <li>
+                        <a class="nav-link" href="">
+                            <p>Pānui</p>
+                            <small>News</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="">
+                            <p>Whakapā</p>
+                            <small>Contact</small>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="mobile-nav">
+                <div class="mobile-nav-overlay-hidden">
+                    <div class="mobile-nav-bg"></div>
+                    <ul class="mobile-nav-options">
+                        <li class="mobile-nav-header">
+                            <h2>Pounamunui</h2>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">
+                                <p>Tō Tātou</p>
+                                <small>About</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">
+                                <p>Whānau</p>
+                                <small>Family</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">
+                                <p>Pānui</p>
+                                <small>News</small>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">
+                                <p>Whakapā</p>
+                                <small>Contact</small>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mobile-nav-bg"></div>
+                </div>
+                <button
+                    id="mobileMenu"
+                    class="mobile-menu"
+                    aria-label="Toggle menu."
+                    aria-controls="mobile-nav-overlay-hidden"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
         </nav>
         <header class="landing-page container">
             <section class="welcome">

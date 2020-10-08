@@ -120,6 +120,98 @@ small {
     line-height: 1.6;
 }
 
+/* MOBILE NAV */
+
+.mobile-nav {
+    display: flex;
+    visibility: hidden;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    z-index: 100;
+}
+
+.mobile-menu {
+    margin: 1rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    z-index: 1000;
+}
+
+.fa-bars {
+    color: #000;
+    font-size: 1.5rem;
+}
+
+.mobile-nav-overlay-hidden {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    transform: translate(100%, 45%);
+    background-color: white;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+.mobile-nav-bg {
+    background: url("./assets/img/quotebanner.png") no-repeat center center;
+    height: 100px;
+    width: 100%;
+    z-index: 200;
+}
+
+.is-visible {
+    transform: translate(0%, 45%);
+}
+
+.mobile-nav-options {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.mobile-nav-header {
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+}
+
+.mobile-nav-header h2 {
+    position: relative;
+}
+
+.mobile-nav-header h2::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 1.3em;
+    transform: translate(-15%);
+    top: 50px;
+    height: 23px;
+    width: 5.8em;
+    background: rgba(43, 166, 0, 0.8);
+}
+
+.mobile-nav-options li {
+    margin: 3rem;
+}
+
+.mobile-nav-options li p {
+    margin-bottom: -1rem;
+}
+
+.mobile-nav-options li a {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
 /* LANDING PAGE */
 
 .welcome {
@@ -453,6 +545,9 @@ small {
 @media only screen and (max-width: 768px) {
     .navigation {
         display: none;
+    }
+    .mobile-nav {
+        visibility: visible;
     }
     .quote blockquote:before {
         display: none;
