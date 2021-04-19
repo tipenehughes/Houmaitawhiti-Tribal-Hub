@@ -1,39 +1,41 @@
-/**
- * Sending custom variables as one object.
- * This by default will allow you to add any additional values if you resend the customObj.
- */
-// Define an object to hold the custom variables
-var customObj = {};
-// Define and set variables
-var usernameU = "McAwesome";
-var sessionU = "12afe34df";
-var referrerU = "" + document.referrer;
-// Fill the customObj with the earlier created custom variables
-customObj.Username = usernameU;
-customObj.SessionID = sessionU;
-customObj.DocumentReferrer = referrerU;
-//Send custom variables by assigning the customObj to the 'custom' object in Usabilla
-window.usabilla_live("data", {
-    custom: customObj,
-});
+// /**
+//  * Sending custom variables as one object.
+//  * This by default will allow you to add any additional values if you resend the customObj.
+//  */
+// // Define an object to hold the custom variables
+// var customObj = {};
+// // Define and set variables
+// var usernameU = "McAwesome";
+// var sessionU = "12afe34df";
+// var referrerU = "" + document.referrer;
+// // Fill the customObj with the earlier created custom variables
+// customObj.Username = usernameU;
+// customObj.SessionID = sessionU;
+// customObj.DocumentReferrer = referrerU;
+// //Send custom variables by assigning the customObj to the 'custom' object in Usabilla
+// window.usabilla_live("data", {
+//     custom: customObj,
+// });
 
-/** Updating/appending custom variables using one object
- * If you want update or append value to the Custom Variables you can simply use the customObj.
- * Update or append any value that you have and update them in the customObj and resend it again using the customObj
- */
-// Update the variables and value
-usernameU = "McAwesomeNew";
-//Update or append them to the customObj
-customObj.Username = usernameU;
-//Resend if you changed/added values in the customObj
-window.usabilla_live("data", {
-    custom: customObj,
-});
+// /** Updating/appending custom variables using one object
+//  * If you want update or append value to the Custom Variables you can simply use the customObj.
+//  * Update or append any value that you have and update them in the customObj and resend it again using the customObj
+//  */
+// // Update the variables and value
+// usernameU = "McAwesomeNew";
+// //Update or append them to the customObj
+// customObj.Username = usernameU;
+// //Resend if you changed/added values in the customObj
+// function updateUsblCustomVar() {
+//     window.usabilla_live("data", {
+//         custom: customObj,
+//     });
+// }
 
-gtag("event", "optimize.callback", {
-    callback: (value, name) =>
-        console.log("Experiment with ID: " + name + " is on variant: " + value),
-});
+// gtag("event", "optimize.callback", {
+//     callback: (value, name) =>
+//         console.log("Experiment with ID: " + name + " is on variant: " + value),
+// });
 
 // Nav bar links hover state
 

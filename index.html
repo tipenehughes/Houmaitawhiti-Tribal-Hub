@@ -315,6 +315,21 @@
                 "//websites.cdn.getfeedback.com/embed/pgEhM4jWAT/gf.js",
                 "gf"
             );
+            gtag("event", "optimize.callback", {
+                callback: (value, name) =>
+                    console.log(
+                        "Experiment with ID: " +
+                            name +
+                            " is on variant: " +
+                            value
+                    ),
+            });
+            window.usabilla_live("data", {
+                custom: {
+                    Username: username,
+                    SessionID: session_id,
+                },
+            });
         </script>
         <script src="./app.js"></script>
     </body>
