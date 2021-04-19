@@ -315,14 +315,13 @@
                 "//websites.cdn.getfeedback.com/embed/pgEhM4jWAT/gf.js",
                 "gf"
             );
+            let obj = {};
+
             gtag("event", "optimize.callback", {
-                callback: (value, name) =>
-                    console.log(
-                        "Experiment with ID: " +
-                            name +
-                            " is on variant: " +
-                            value
-                    ),
+                callback: (value, name) => {
+                    obj.name = name;
+                    obj.value = value;
+                },
             });
             window.usabilla_live("data", {
                 custom: {
