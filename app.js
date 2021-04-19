@@ -1,3 +1,20 @@
+function gtag() {
+    dataLayer.push(arguments);
+}
+
+function implementExperimentA(value) {
+    if (value == "0") {
+        console.log("Yes");
+    } else if (value == "1") {
+        console.log("No");
+    }
+}
+
+gtag("event", "optimize.callback", {
+    name: "<experiment_id_A>",
+    callback: implementExperimentA,
+});
+
 // Nav bar links hover state
 
 const navigation = document.getElementById("navigation");
